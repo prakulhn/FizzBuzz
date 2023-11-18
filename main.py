@@ -1,12 +1,13 @@
 n = int(input("Enter the value of n: "))
-a = range(1, n+1)
-print("The output is as follows: ")
-for i in a:
+print("The output is as follows: \n")
+for i in (1,n+1):
+    output = " "
     if i % 3 == 0 and i % 5 == 0:
-        print("Fizz Buzz")
+        output += "FizzBuzz"
     elif i % 3 == 0:
-        print("Fizz")
+        output += "Fizz"
     elif i % 5 == 0:
-        print("Buzz")
+        output += "Buzz"
     else:
-        print(i)
+        output += str(i)
+    print(output)
